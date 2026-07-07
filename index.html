@@ -15,25 +15,69 @@
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style>
-			#nav {
-		position: sticky;
-		top: 0;
-		z-index: 9999;
+	/* Smooth native section jumping */
+	html {
+		scroll-behavior: smooth;
 	}
-		
-			#excel-dashboards,
-			#powerbi-projects,
-			#sql-projects,
-			#about {
-				scroll-margin-top: 6rem;
-			}
 
-			#nav ul.links li a {
-			white-space: nowrap;
+	/* Fixed section navigation */
+	#nav {
+		position: fixed !important;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: 72rem;
+		z-index: 10000;
+	}
+
+	/* Prevent the fixed nav from covering the main content */
+	#main {
+		padding-top: 5rem;
+	}
+
+	/* Make anchor jumps stop below the fixed nav */
+	#analytics,
+	#excel-dashboards,
+	#powerbi-projects,
+	#sql-projects,
+	#about {
+		scroll-margin-top: 7rem;
+	}
+
+	/* Keep menu labels on one line */
+	#nav ul.links li a {
+		white-space: nowrap;
+	}
+
+	/* Mobile/tablet support */
+	@media screen and (max-width: 980px) {
+		#nav {
+			left: 0;
+			transform: none;
+			width: 100%;
+			max-width: none;
+			overflow-x: auto;
 		}
-			
-		</style>
-	</head>
+
+		#nav ul.links {
+			flex-wrap: nowrap;
+			overflow-x: auto;
+		}
+
+		#main {
+			padding-top: 4.5rem;
+		}
+
+		#analytics,
+		#excel-dashboards,
+		#powerbi-projects,
+		#sql-projects,
+		#about {
+			scroll-margin-top: 6rem;
+		}
+	}
+</style>	</head>
 
 	<body class="is-preload">
 
