@@ -14,30 +14,67 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<style>
-			#analytics,
-			#excel-dashboards,
-			#powerbi-projects,
-			#sql-projects,
-			#about {
-				scroll-margin-top: 6rem;
-			}
+	<style>
+	html {
+		scroll-behavior: smooth;
+	}
 
-			.section-intro {
-				text-align: center;
-				margin: 0 auto 3rem auto;
-				max-width: 54rem;
-			}
+	#analytics,
+	#excel-dashboards,
+	#powerbi-projects,
+	#sql-projects,
+	#about {
+		scroll-margin-top: 4rem;
+	}
 
-			.section-intro h2 {
-				margin-bottom: 0.75rem;
-			}
+	.floating-section-nav {
+		position: fixed;
+		right: 1.2rem;
+		bottom: 1.2rem;
+		z-index: 99999;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
 
-			.project-note {
-				font-size: 0.9rem;
-				font-style: italic;
-			}
-		</style>
+	.floating-section-nav a {
+		background: #ffffff;
+		color: #212931;
+		border: 1px solid #dddddd;
+		padding: 0.65rem 0.9rem;
+		font-size: 0.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		border-radius: 4px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+	}
+
+	.floating-section-nav a:hover {
+		background: #212931;
+		color: #ffffff;
+	}
+
+	@media screen and (max-width: 736px) {
+		.floating-section-nav {
+			left: 0;
+			right: 0;
+			bottom: 0;
+			flex-direction: row;
+			justify-content: flex-start;
+			overflow-x: auto;
+			background: #ffffff;
+			padding: 0.5rem;
+			border-top: 1px solid #dddddd;
+		}
+
+		.floating-section-nav a {
+			font-size: 0.65rem;
+			white-space: nowrap;
+			box-shadow: none;
+		}
+	}
+</style>
 	</head>
 
 	<body class="is-preload">
@@ -61,13 +98,12 @@
 
 			<!-- Nav -->
 			<nav id="nav">
-				<ul class="links">
-					<li class="active"><a href="#analytics" class="scrolly">Projects</a></li>
-					<li><a href="#excel-dashboards" class="scrolly">Excel Analytics</a></li>
-					<li><a href="#powerbi-projects" class="scrolly">Business Intelligence</a></li>
-					<li><a href="#sql-projects" class="scrolly">SQL</a></li>
-					<li><a href="#about" class="scrolly">About Me</a></li>
-				</ul>
+	<ul class="links">
+		<li class="active"><a href="#analytics" class="scrolly">Projects</a></li>
+		<li><a href="#excel-dashboards" class="scrolly">Excel Analytics</a></li>
+		<li><a href="#powerbi-projects" class="scrolly">Business Intelligence</a></li>
+		<li><a href="#sql-projects" class="scrolly">SQL</a></li>
+		<li><a href="#about" class="scrolly">About Me</a></li>
 
 				<ul class="icons">
 					<li>
@@ -82,6 +118,13 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="floating-section-nav">
+	<a href="#analytics">Projects</a>
+	<a href="#excel-dashboards">Excel</a>
+	<a href="#powerbi-projects">Power BI</a>
+	<a href="#sql-projects">SQL</a>
+	<a href="#about">About</a>
+				</div>
 
 			<!-- Main -->
 			<div id="main">
