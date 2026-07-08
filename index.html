@@ -55,23 +55,10 @@
 		color: #ffffff;
 	}
 
-	@media screen and (max-width: 736px) {
+	/* Hide floating menu on phone/tablet */
+	@media screen and (max-width: 980px) {
 		.floating-section-nav {
-			left: 0;
-			right: 0;
-			bottom: 0;
-			flex-direction: row;
-			justify-content: flex-start;
-			overflow-x: auto;
-			background: #ffffff;
-			padding: 0.5rem;
-			border-top: 1px solid #dddddd;
-		}
-
-		.floating-section-nav a {
-			font-size: 0.65rem;
-			white-space: nowrap;
-			box-shadow: none;
+			display: none;
 		}
 	}
 </style>
