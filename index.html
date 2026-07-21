@@ -141,12 +141,13 @@
 				</ul>
 			</nav>
 			<div class="floating-section-nav">
+	<a href="#analytics">Projects</a>
 	<a href="#powerbi-projects">Hackathon Project</a>
 	<a href="#excel-dashboards">Excel</a>
 	<a href="#powerbi-projects">Power BI</a>
 	<a href="#sql-projects">SQL</a>
 	<a href="#about">About</a>
-				</div>
+</div>
 
 			<!-- Main -->
 			<div id="main">
@@ -575,6 +576,27 @@ My contribution focused on turning fragmented public health data into a clear, i
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const floatingNav = document.querySelector(".floating-section-nav");
+		const excelSection = document.querySelector("#excel-dashboards");
 
+		if (!floatingNav || !excelSection) return;
+
+		function toggleFloatingNav() {
+			const excelSectionPosition = excelSection.getBoundingClientRect().top;
+			const scrollPosition = window.scrollY;
+
+			if (scrollPosition > excelSection.offsetTop + 500) {
+				floatingNav.classList.add("show");
+			} else {
+				floatingNav.classList.remove("show");
+			}
+		}
+
+		window.addEventListener("scroll", toggleFloatingNav);
+		toggleFloatingNav();
+	});
+</script>
 	</body>
 </html>
