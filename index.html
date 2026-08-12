@@ -2,941 +2,2306 @@
 <!--
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Free for personal and commercial use under the CCA 3.0 license
 -->
 <html lang="en">
-	<head>
-		<title>Mariam Adetoyi | Analytics Portfolio</title>
-		<link rel="icon" type="image/png" href="images/favicon.png.jpg">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Mariam Adetoyi's data analytics portfolio featuring Excel dashboards, Power BI business intelligence projects, SQL analysis, healthcare analytics, and data storytelling." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+<head>
+
+	<title>Mariam Adetoyi | Analytics Portfolio</title>
+
+	<link rel="icon" type="image/png" href="images/favicon.png.jpg">
+
+	<meta charset="utf-8" />
+
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
+
+	<meta
+		name="description"
+		content="Mariam Adetoyi's data analytics portfolio featuring Excel dashboards, Power BI business intelligence projects, SQL analysis, Tableau analytics, healthcare analytics, workforce analytics, commercial analysis and data storytelling."
+	/>
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
 
 	<style>
-	html {
-		scroll-behavior: smooth;
-	}
 
-	#analytics,
-	#excel-dashboards,
-	#powerbi-projects,
-	#sql-projects,
-	#tableau-projects,
-	#about {
-		scroll-margin-top: 4rem;
-	}
+		/* ================================
+		   GENERAL
+		================================ */
 
-	#featured-hackathon {
-		border-top: 6px solid #00A896;
-	}
-
-	#featured-hackathon h2 {
-		color: #0B1F33;
-	}
-
-	#featured-hackathon .date {
-		color: #00A896;
-		font-weight: 700;
-		letter-spacing: 0.08rem;
-		text-transform: uppercase;
-	}
-
-	/* Floating menu hidden by default - side top position */
-.floating-section-nav {
-	position: fixed;
-	right: 0.8rem;
-	top: 7rem;
-	z-index: 99999;
-	display: flex;
-	flex-direction: column;
-	gap: 0.35rem;
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-	transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-/* Show floating menu after scroll */
-.floating-section-nav.show {
-	opacity: 1;
-	visibility: visible;
-	pointer-events: auto;
-}
-
-.floating-section-nav a {
-	background: rgba(255, 255, 255, 0.92);
-	color: #212931;
-	border: 1px solid #dddddd;
-	padding: 0.35rem 0.55rem;
-	font-size: 0.6rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 4px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-	min-width: 90px;
-	text-align: center;
-	line-height: 1.2;
-}
-
-.floating-section-nav a:hover {
-	background: #212931;
-	color: #ffffff;
-}
-	.profile-photo {
-		display: block;
-		text-align: center;
-		margin: 0 auto 2rem auto;
-	}
-
-	.profile-photo img {
-		width: 320px;
-		max-width: 100%;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-		border-radius: 8px;
-	}
-
-	/* Hide floating menu on phone/tablet */
-	@media screen and (max-width: 980px) {
-		.floating-section-nav {
-			display: none;
+		html {
+			scroll-behavior: smooth;
 		}
-	}
-</style>
-	</head>
-
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
-
-			<!-- Intro -->
-			<div id="intro">
-				<h1>MARIAM ADETOYI</h1>
-				<p>Data Analyst | Business Intelligence & Healthcare Analytics Professional</p>
-				<ul class="actions">
-					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-				</ul>
-			</div>
-
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">Analytics Portfolio</a>
-			</header>
-
-			<!-- Nav -->
-			<nav id="nav">
-	<ul class="links">
-		<li><a href="#excel-dashboards" class="scrolly">Excel Analytics</a></li>
-		<li><a href="#powerbi-projects" class="scrolly">Business Intelligence</a></li>
-		<li><a href="#sql-projects" class="scrolly">SQL</a></li>
-		<li><a href="#tableau-projects" class="scrolly">SQL</a></li>
-		<li><a href="#about" class="scrolly">About Me</a></li>
-
-				</ul>
-			</nav>
-			<div class="floating-section-nav">
-	<a href="#excel-dashboards">Excel</a>
-	<a href="#powerbi-projects">Power BI</a>
-	<a href="#sql-projects">SQL</a>
-	<a href="#tableau-projects">Tableau</a>
-	<a href="#about">About</a>
-</div>
-
-			<!-- Main -->
-			<div id="main">
-				
-				<!-- Portfolio Overview -->
-				<section class="post featured" id="analytics">
-					<header class="major">
-						<h2>Data Analytics & Business Intelligence Projects</h2>
-						<p>
-							A curated collection of analytics projects grouped by technical focus: Excel dashboarding,
-							Power BI business intelligence, SQL data analysis, and Tableau. These projects demonstrate data cleaning,
-							KPI development, dashboard design, healthcare analytics, commercial analysis, and insight-driven reporting.
-						</p>
-					</header>
-				</section>
-
-				<!-- Excel Projects -->
-				<section id="excel-dashboards">
-					<header class="major section-intro">
-						<h2>Excel Analytics Projects</h2>
-						<p>
-							Interactive Excel dashboards built with PivotTables, Pivot Charts, slicers, KPI cards,
-							and clean dashboard layouts to analyse healthcare performance and operational activity.
-						</p>
-					</header>
-
-					<section class="posts">
-
-						<article>
-							<header>
-								<h2>Green Valley Medical Centre Performance Analysis</h2>
-							</header>
-
-							<a href="https://drive.google.com/drive/folders/12KOxyQJKBcl4rXlfnQY5C-XoXufPxvXc?usp=drive_link" target="_blank" rel="noopener" class="image fit">
-								<img src="images/Green Valley Dashboard.png" alt="Green Valley Medical Centre Excel dashboard" />
-							</a>
-
-							<p>
-								An Excel-based healthcare analytics project analysing 400 patient records to evaluate recovery outcomes,
-								treatment effectiveness, departmental performance, treatment cost, and patient demographics.
-								<br><br>
-								The interactive dashboard tracks total patients, average recovery score, average treatment cost,
-								and average patient age, with slicers for department, doctor, treatment type, and gender.
-								<br><br><b>Key Insights:</b><br>
-								• Average recovery score was 75.<br>
-								• Average treatment cost was £5,052.<br>
-								• Dermatology and General Medicine recorded the strongest recovery performance.<br>
-								• Cardiology showed lower recovery outcomes.<br>
-								• Surgery achieved the best treatment recovery score.<br>
-								• Low-cost treatment patients made up 80% of the distribution.<br>
-								<br><b>Tools Used:</b><br>
-								• Microsoft Excel<br>
-								• PivotTables<br>
-								• Pivot Charts<br>
-								• Slicers<br>
-								• Dashboard Design<br>
-								• Healthcare Analytics
-							</p>
-
-							<ul class="actions special">
-								<li>
-									<a href="https://drive.google.com/drive/folders/12KOxyQJKBcl4rXlfnQY5C-XoXufPxvXc?usp=drive_link" class="button" target="_blank" rel="noopener">View Project</a>
-								</li>
-							</ul>
-						</article>
-
-						<article>
-							<header>
-								<h2>Medcore Healthcare Performance Analysis</h2>
-							</header>
-
-							<a href="https://drive.google.com/drive/folders/1nkLUECczsVXiSHYBzzxnqCb1G0y0ccjX?usp=drive_link" target="_blank" rel="noopener" class="image fit">
-								<img src="images/Medcore Healh Dashboard.png" alt="Medcore Healthcare Excel dashboard" />
-							</a>
-
-							<p>
-								An Excel-based healthcare analytics project evaluating hospital operations, revenue performance,
-								admission patterns, clinical demand, physician workload, length of stay, and diagnostic testing activity
-								across Medcore Health Network.
-								<br><br>
-								The dashboard consolidates fragmented healthcare data into a single executive reporting view,
-								helping stakeholders monitor performance, identify pressure areas, and support data-driven decisions.
-								<br><br><b>Key Focus Areas:</b><br>
-								• Hospital operations analysis.<br>
-								• Revenue and admission trend monitoring.<br>
-								• Clinical demand and physician workload review.<br>
-								• Length of stay and diagnostic testing analysis.<br>
-								<br><b>Tools Used:</b><br>
-								• Microsoft Excel<br>
-								• PivotTables<br>
-								• Pivot Charts<br>
-								• Slicers<br>
-								• KPI Reporting<br>
-								• Healthcare Analytics
-							</p>
-
-							<ul class="actions special">
-								<li>
-									<a href="https://drive.google.com/drive/folders/1-qScXpZhdxkpm8Ml2INqitk6zqWlzapR?usp=drive_link" class="button" target="_blank" rel="noopener">View Project</a>
-								</li>
-							</ul>
-						</article>
-
-					</section>
-				</section>
-
-				<!-- Power BI Projects -->
-				<section id="powerbi-projects">
-					<header class="major section-intro">
-						<h2>Business Intelligence Projects</h2>
-						<p>
-							Power BI projects focused on data modelling, Power Query transformation, DAX measures,
-							interactive dashboards, KPI reporting, year-on-year analysis, and data storytelling.
-						</p>
-					</header>
-
-					<section class="posts">
-
-						<article>
-							<header>
-								<h2>Global HIV Burden Treatment Coverage Analysis</h2>
-							</header>
-
-							<a href="https://drive.google.com/drive/folders/1ZsYUfz9ovaeOnkfEpd9uWhOTLn5bY7Pe?usp=drive_link" target="_blank" rel="noopener" class="image fit">
-								<img src="images/Global HIV Burden Analysis Png.png" alt="Global HIV Burden Power BI dashboard" />
-							</a>
-
-							<p>
-								A Power BI public health analytics project analysing global HIV trends from 2000 to 2024,
-								focusing on new infections, HIV-related deaths, people living with HIV, ART coverage,
-								death rate, survival rate, and country-level risk.
-								<br><br>
-								The dataset was cleaned, modelled into a star schema, and transformed into an interactive dashboard
-								with slicers for year and continent.
-								<br><br><b>Key Insights:</b><br>
-								• In 2024, 35.23M people were living with HIV globally.<br>
-								• New infections reached 984K, while HIV-related deaths were 523K.<br>
-								• Death rate was 1.49%, while survival rate was 98.51%.<br>
-								• From 2000 to 2024, new infections declined by 59.02% and HIV deaths declined by 65.50%.<br>
-								• South Africa had the highest HIV burden in 2024.<br>
-								• Treatment access remains uneven across countries, especially among high-infection countries.
-							</p>
-
-							<ul class="actions special">
-								<li>
-									<a href="https://drive.google.com/drive/folders/1ZsYUfz9ovaeOnkfEpd9uWhOTLn5bY7Pe?usp=drive_link" class="button" target="_blank" rel="noopener">View Project</a>
-								</li>
-							</ul>
-						</article>
-
-						<article>
-							<header>
-								<h2>VitalCare Performance Analysis</h2>
-							</header>
-
-							<a href="https://drive.google.com/file/d/121rrSA-Nfr_-Zd-b0rCE5XHtYbU4yayi/view?usp=drive_link" target="_blank" rel="noopener" class="image fit">
-								<img src="images/VitalCare pic.png" alt="VitalCare Power BI dashboard" />
-							</a>
-
-							<p>
-								A three-page Power BI healthcare dashboard comparing 2023 and 2024 performance across operational,
-								clinical, and financial outcomes. The report helps stakeholders understand how patient demand,
-								clinical outcomes, resource utilisation, and financial sustainability changed year-on-year.
-								<br><br>
-								The report includes an Overview page, Clinical Analysis page, and Financial Analysis page,
-								covering admissions, patient trends, revenue, length of stay, readmissions, clinical outcomes,
-								bed occupancy, mortality rate, profit, cost, and department-level performance.
-								<br><br><b>Key Findings:</b><br>
-								• Admissions increased by 4.08%.<br>
-								• Total patients increased by 3.43%.<br>
-								• Revenue increased by 5.75%, while profit increased by 4.70%.<br>
-								• Mortality rate reduced by 15.77%.<br>
-								• Readmission rate increased by 8.68%, highlighting the need for stronger discharge planning and patient follow-up.<br>
-								• Profit margin declined from 14.82% to 14.67% because cost increased slightly faster than revenue.<br>
-								• General Surgery had the highest admissions, while Oncology was the strongest revenue and profit contributor.<br>
-								<br><b>Tools Used:</b><br>
-								• Power BI<br>
-								• Power Query<br>
-								• DAX<br>
-								• Data Modelling<br>
-								• KPI Reporting<br>
-								• Interactive Dashboard Design
-							</p>
-
-							<ul class="actions special">
-								<li>
-									<a href="https://drive.google.com/drive/folders/1MyexTMLURhKrjPMCMT6Vl3a_WNZhLv61?usp=drive_link" class="button" target="_blank" rel="noopener">View Project</a>
-								</li>
-							</ul>
-						</article>
-
-						<article>
-							<header>
-								<h2>Toy Store E-Commerce Analysis</h2>
-							</header>
-
-							<a href="https://drive.google.com/drive/folders/1sy48wY4PBqkf6NH0JSV84iBrT7FfsvKw?usp=drive_link" target="_blank" rel="noopener" class="image fit">
-								<img src="images/Toy E-commerce store Dashboard png.png" alt="Toy Store E-Commerce Power BI dashboard" />
-							</a>
-
-							<p>
-								A Power BI e-commerce analytics project evaluating toy store performance across sales, orders,
-								revenue trends, product categories, customer behaviour, and marketing channel effectiveness.
-								<br><br>
-								The dashboard consolidates key commercial metrics into one interactive reporting view,
-								helping stakeholders monitor performance, identify top-performing products, track demand,
-								and make data-driven decisions to improve revenue, conversion, and profitability.
-								<br><br><b>Key Focus Areas:</b><br>
-								• Sales and revenue performance.<br>
-								• Order volume and conversion trends.<br>
-								• Product category analysis.<br>
-								• Customer purchasing behaviour.<br>
-								• Marketing channel performance.<br>
-								• Revenue per order and revenue per session.<br>
-								<br><b>Tools Used:</b><br>
-								• Power BI<br>
-								• Power Query<br>
-								• DAX<br>
-								• Data Modelling<br>
-								• KPI Reporting<br>
-								• Interactive Dashboard Design<br>
-								• E-commerce Analytics
-							</p>
-
-							<ul class="actions special">
-								<li>
-									<a href="https://drive.google.com/drive/folders/1sy48wY4PBqkf6NH0JSV84iBrT7FfsvKw?usp=drive_link" class="button" target="_blank" rel="noopener">View Project</a>
-								</li>
-							</ul>
-						</article>
-<!-- Featured Hackathon Project -->
-<section class="post featured" id="featured-hackathon">
-	<header class="major">
-		<h2>ADHCRI Health Intelligence Dashboard</h2>
-		<p>
-			<strong>Team HealthSync</strong><br>
-			A Power BI healthcare analytics project analysing public health indicators across ASEAN countries
-			to identify health inequalities, disease burden, nutrition risks, child and maternal health challenges,
-			healthcare investment gaps, and workforce capacity.
-		</p>
-	</header>
-
-	<a href="videos/Hackathon Demo Video.mp4" target="_blank" rel="noopener" class="image main">
-		<img src="images/Page 1.png" alt="ADHCRI Health Intelligence Dashboard Power BI project" />
-	</a>
-
-	<p>
-		This project was developed under the ASEAN Digital Health & Climate Resilience Initiative framework.
-		The dashboard transforms scattered health datasets into clear, interactive insights that can support
-		evidence-based public health planning, targeted healthcare investment, and SDG-aligned decision-making.
-	</p>
-
-	<p>
-		<b>Problem Statement:</b><br>
-		ASEAN countries face unequal health outcomes, disease burden, and healthcare capacity gaps, creating
-		a need for data-driven insights to identify priority areas for public health intervention and investment.
-	</p>
-
-	<p>
-		<b>Dashboard Pages:</b><br>
-		• ASEAN Public Health Overview<br>
-		• Disease, Nutrition & Child Health Risk<br>
-		• Healthcare Capacity & Investment
-	</p>
-
-	<p>
-		<b>SDG Alignment:</b><br>
-		• SDG 3: Good Health & Well-being<br>
-		• SDG 10: Reduced Inequalities<br>
-		• SDG 17: Partnerships for the Goals
-	</p>
-
-	<p>
-		<b>Tools Used:</b><br>
-		Power BI, Power Query, DAX, Star Schema, Data Modelling, Data Visualisation, PowerPoint
-	</p>
-	<p>
-		<b>My Role and Contribution</b><br>
-
-As part of Team HealthSync, I contributed to the data analytics workflow by cleaning and transforming multiple ASEAN public health datasets, standardising country names, restructuring year-based columns into a long analytical format, and preparing the data model for Power BI analysis. I also supported the dashboard design, DAX measure creation, insight generation, and storytelling of the final report.
-
-My contribution focused on turning fragmented public health data into a clear, interactive Power BI dashboard that can help identify health risks, inequalities, and priority areas for intervention across ASEAN countries.</p>
-
-	<ul class="actions special">
-		<li>
-			<a href="Hackathon Demo Video.mp4" class="button large" target="_blank" rel="noopener">
-				Watch Dashboard Demo
-			</a>
-		</li>
-		<li>
-			<a href="HealthSync Analytics.pdf" class="button large" target="_blank" rel="noopener">
-				View Presentation
-			</a>
-		</li>
-		<li>
-			<a href="HealthSync Analytics Team.pbix" class="button large" target="_blank" rel="noopener">
-				View Report
-			</a>
-	</ul>
-</section>
-
-					</section>
-				</section>
-
-				<!-- SQL Projects -->
-				<section id="sql-projects">
-					<header class="major section-intro">
-						<h2>SQL Data Analysis Projects</h2>
-						<p>
-							SQL projects focused on querying relational databases, extracting business insights,
-							joining tables, filtering records, aggregating data, using subqueries, and answering business questions
-							through structured analysis.
-						</p>
-					</header>
-
-					<section class="posts">
-
-
-<article>
-	<header>
-		<h2>MotivaAutos SQL Data Analysis</h2>
-	</header>
-
-	<a href="https://drive.google.com/drive/folders/1txOPuvVuGolLJEYl4DTQvj_gASVFI-Cr?usp=drive_link"
-	   target="_blank"
-	   rel="noopener"
-	   class="image fit">
-		<img src="images/motiva autos.jpg" alt="MotivaAutos SQL Data Analysis" />
-	</a>
-
-	<p>
-		A SQL-based automotive sales analysis project focused on transforming relational business data
-		into meaningful commercial insights. I used SQL to analyse customers, products, orders and suppliers,
-		helping answer key questions around sales performance, product demand and revenue contribution.
-
-		<br><br>
-
-		The analysis explores customer ordering activity, product performance, revenue and units sold,
-		supplier contributions and high-value products. By translating business questions into structured
-		SQL queries, the project demonstrates how transactional data can be used to support better
-		commercial and operational decision-making.
-
-		<br><br>
-
-		<b>Key Focus Areas:</b><br>
-		• Customer and order analysis.<br>
-		• Product sales, revenue and units sold.<br>
-		• Identification of top and low-performing products.<br>
-		• Supplier and supplier-country analysis.<br>
-		• Supplier value and contribution analysis.<br>
-		• Identification of high-value and expensive products.<br>
-		• Translating business questions into actionable insights.<br>
-
-		<br>
-
-		<b>Tools & Skills:</b><br>
-		• SQL<br>
-		• JOINs<br>
-		• GROUP BY<br>
-		• Aggregations<br>
-		• Filtering & Sorting<br>
-		• Subqueries<br>
-		• Relational Data Analysis<br>
-		• Revenue Analysis<br>
-		• Product Performance Analysis<br>
-		• Business Insights<br>
-	</p>
-
-	<ul class="actions special">
-		<li>
-			<a href="https://drive.google.com/drive/folders/1txOPuvVuGolLJEYl4DTQvj_gASVFI-Cr?usp=drive_link"
-			   class="button"
-			   target="_blank"
-			   rel="noopener">
-				View Project
-			</a>
-		</li>
-	</ul>
-</article>
-						<article>
-	<header>
-		<h2>Lumina Healthcare SQL Analysis</h2>
-	</header>
-
-	<a href="https://drive.google.com/drive/folders/1W-WPCqNjApKLCTO4UB1_ZORhOMnwhkJZ?usp=drive_link"
-	   target="_blank"
-	   rel="noopener"
-	   class="image fit">
-		<img src="images/lumina ht.png"
-		     alt="Lumina Healthcare SQL Data Analysis" />
-	</a>
-
-	<p>
-		A PostgreSQL-based healthcare operations analysis focused on transforming
-		relational hospital data into meaningful clinical, operational and financial insights.
-		I used SQL to analyse patient admissions, hospital activity, departmental performance,
-		readmissions, treatment outcomes, insurance coverage and revenue performance.
-
-		<br><br>
-
-		The analysis was designed to answer key management questions around patient demand,
-		service utilisation, clinical outcomes and financial performance. Using structured SQL
-		queries, I connected multiple healthcare tables, calculated performance indicators,
-		identified high-performing departments and hospitals, and explored patterns that could
-		support better operational and strategic decision-making.
-
-		<br><br>
-
-		<b>Key Focus Areas:</b><br>
-		• Patient admissions and service utilisation analysis.<br>
-		• Emergency and annual admission activity.<br>
-		• Average length of stay and recovery performance.<br>
-		• 30-day readmission analysis by hospital and department.<br>
-		• Patient demographic and age-group analysis.<br>
-		• Hospital and departmental revenue performance.<br>
-		• Treatment costs, insurance coverage and patient payments.<br>
-		• Identification of above-average revenue cases and high-performing hospitals.<br>
-
-		<br>
-
-		<b>SQL Techniques & Skills:</b><br>
-		• PostgreSQL<br>
-		• pgAdmin 4<br>
-		• SQL JOINs<br>
-		• GROUP BY & HAVING<br>
-		• Aggregations<br>
-		• CASE Statements<br>
-		• Conditional Aggregation<br>
-		• Subqueries<br>
-		• Date Functions<br>
-		• KPI Analysis<br>
-		• Relational Database Analysis<br>
-		• Healthcare Analytics<br>
-		• Business Insights<br>
-	</p>
-
-	<ul class="actions special">
-		<li>
-			<a href="https://drive.google.com/drive/folders/1W-WPCqNjApKLCTO4UB1_ZORhOMnwhkJZ?usp=drive_link"
-			   class="button"
-			   target="_blank"
-			   rel="noopener">
-				View Project
-			</a>
-		</li>
-	</ul>
-</article>
-						<article>
-	<header>
-		<h2>Northwind SQL Data Analysis</h2>
-	</header>
-
-	<a href="https://drive.google.com/drive/folders/1aXZnlH4kNWDgpxGJnp2UrIMDDi0p8eHO?usp=drive_link"
-	   target="_blank"
-	   rel="noopener"
-	   class="image fit">
-		<img src="images/northwind pic.png"
-		     alt="Northwind SQL Data Analysis" />
-	</a>
-
-	<p>
-		A SQL-based business analysis project using the Northwind relational database
-		to explore sales, customers, products, suppliers, employees and order activity.
-		I used SQL to answer business questions, identify performance patterns and
-		transform transactional data into clear commercial insights.
-
-		<br><br>
-
-		The analysis involved combining multiple related tables to evaluate product
-		performance, customer activity, supplier distribution, employee information
-		and order trends. SQL queries were used to identify top and low-performing
-		products, analyse supplier value and extract information that could support
-		better operational and commercial decision-making.
-
-		<br><br>
-
-		<b>Key Focus Areas:</b><br>
-		• Customer and order analysis.<br>
-		• Product pricing and sales performance.<br>
-		• Identification of top and low-performing products.<br>
-		• Supplier and supplier-country analysis.<br>
-		• Supplier inventory and product value analysis.<br>
-		• Employee and sales representative analysis.<br>
-		• Shipping and order information analysis.<br>
-		• Identification of high-value products.<br>
-
-		<br>
-
-		<b>SQL Techniques & Skills:</b><br>
-		• SQL<br>
-		• JOINs<br>
-		• GROUP BY<br>
-		• Aggregations<br>
-		• Filtering & Sorting<br>
-		• Subqueries<br>
-		• Relational Database Analysis<br>
-		• Customer Analysis<br>
-		• Product Performance Analysis<br>
-		• Supplier Analysis<br>
-		• Business Insights<br>
-	</p>
-
-	<ul class="actions special">
-		<li>
-			<a href="https://drive.google.com/drive/folders/1aXZnlH4kNWDgpxGJnp2UrIMDDi0p8eHO?usp=drive_link"
-			   class="button"
-			   target="_blank"
-			   rel="noopener">
-				View Project
-			</a>
-		</li>
-	</ul>
-</article>
-						<article>
-	<header>
-		<h2>DORI SQL Data Analysis</h2>
-	</header>
-
-	<a href="https://drive.google.com/drive/folders/1vpzvhEqZI50PAtWPnP1ceR4ZELFJVUsX?usp=sharing"
-	   target="_blank"
-	   rel="noopener"
-	   class="image fit">
-		<img src="images/dori.png"
-		     alt="DORI Skin Cancer Risk Intelligence SQL Data Analysis" />
-	</a>
-
-	<p>
-		A SQL-based healthcare analytics project developed for the Dermalife Oncology
-		and Research Institute (DORI), focused on analysing patient and clinical data
-		to support skin cancer risk intelligence and improve patient diagnosis.
-
-		<br><br>
-
-		The analysis explores patient characteristics, diagnosis patterns and clinical
-		risk factors to identify meaningful trends within the data. SQL was used to
-		retrieve, filter, join, aggregate and segment patient records, helping transform
-		complex clinical information into structured insights that can support
-		evidence-based healthcare decision-making.
-
-		<br><br>
-
-		<b>Key Focus Areas:</b><br>
-		• Patient demographic analysis.<br>
-		• Skin cancer risk-factor analysis.<br>
-		• Diagnosis pattern exploration.<br>
-		• Patient segmentation and risk profiling.<br>
-		• Identification of high-risk patient groups.<br>
-		• Clinical and diagnostic trend analysis.<br>
-		• Data-driven patient diagnosis optimisation.<br>
-		• Translating healthcare questions into analytical insights.<br>
-
-		<br>
-
-		<b>SQL Techniques & Skills:</b><br>
-		• SQL<br>
-		• JOINs<br>
-		• GROUP BY<br>
-		• Aggregations<br>
-		• Filtering & Sorting<br>
-		• CASE Statements<br>
-		• Conditional Analysis<br>
-		• Subqueries<br>
-		• Patient Segmentation<br>
-		• Healthcare Data Analysis<br>
-		• Risk Analysis<br>
-		• Business & Clinical Insights<br>
-	</p>
-
-	<ul class="actions special">
-		<li>
-			<a href="https://drive.google.com/drive/folders/1vpzvhEqZI50PAtWPnP1ceR4ZELFJVUsX?usp=sharing"
-			   class="button"
-			   target="_blank"
-			   rel="noopener">
-				View Project
-			</a>
-		</li>
-	</ul>
-</article>
-							<p class="project-note">
-							</p>
-						</article>
-
-					</section>
-				</section>
-<!-- Tableau Analytics Section -->
-<section id="tableau-projects">
-
-	<header class="major">
-		<h2>
-			<a href="#">Tableau Analytics</a>
-		</h2>
-		<p>
-			Interactive dashboards and analytical projects focused on transforming
-			complex datasets into clear business insights and actionable recommendations.
-		</p>
-	</header>
-
-	<section class="posts">
-
-		<!-- Talent Pulse Project -->
-		<article>
-			<header>
-				<span class="date">Tableau | Excel | Workforce Analytics</span>
-
-				<h2>
-					<a href="https://drive.google.com/drive/folders/1LEFsW1jHn9G5NGIMdp1RtXh9nwNgYy-V?usp=drive_link">
-						Talent Pulse Solutions<br />
-						Workforce Attrition Analysis
-					</a>
-				</h2>
-			</header>
-
-			<a href="#" class="image fit">
-				<img
-					src="images/talent pulse.png"
-					alt="Talent Pulse Workforce Attrition Tableau Dashboard"
-				/>
-			</a>
+
+
+		#analytics,
+		#excel-dashboards,
+		#powerbi-projects,
+		#sql-projects,
+		#tableau-projects,
+		#about {
+			scroll-margin-top: 4rem;
+		}
+
+
+		/* ================================
+		   FEATURED HACKATHON
+		   Green top line removed
+		================================ */
+
+		#featured-hackathon h2 {
+			color: #0B1F33;
+		}
+
+
+		#featured-hackathon .date {
+			color: #00A896;
+			font-weight: 700;
+			letter-spacing: 0.08rem;
+			text-transform: uppercase;
+		}
+
+
+		/* ================================
+		   FLOATING SIDE NAVIGATION
+		================================ */
+
+		.floating-section-nav {
+
+			position: fixed;
+
+			right: 0.8rem;
+
+			top: 7rem;
+
+			z-index: 99999;
+
+			display: flex;
+
+			flex-direction: column;
+
+			gap: 0.35rem;
+
+			opacity: 0;
+
+			visibility: hidden;
+
+			pointer-events: none;
+
+			transition:
+				opacity 0.3s ease,
+				visibility 0.3s ease;
+		}
+
+
+		.floating-section-nav.show {
+
+			opacity: 1;
+
+			visibility: visible;
+
+			pointer-events: auto;
+		}
+
+
+		.floating-section-nav a {
+
+			background: rgba(255, 255, 255, 0.92);
+
+			color: #212931;
+
+			border: 1px solid #dddddd;
+
+			padding: 0.35rem 0.55rem;
+
+			font-size: 0.6rem;
+
+			font-weight: 700;
+
+			text-transform: uppercase;
+
+			text-decoration: none;
+
+			border-radius: 4px;
+
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+			min-width: 90px;
+
+			text-align: center;
+
+			line-height: 1.2;
+		}
+
+
+		.floating-section-nav a:hover {
+
+			background: #212931;
+
+			color: #ffffff;
+		}
+
+
+		/* ================================
+		   PROFILE PHOTO
+		================================ */
+
+		.profile-photo {
+
+			display: block;
+
+			text-align: center;
+
+			margin: 0 auto 2rem auto;
+		}
+
+
+		.profile-photo img {
+
+			width: 320px;
+
+			max-width: 100%;
+
+			height: auto;
+
+			display: block;
+
+			margin: 0 auto;
+
+			border-radius: 8px;
+		}
+
+
+		/* ================================
+		   TABLEAU SECTION
+		================================ */
+
+		#tableau-projects {
+
+			scroll-margin-top: 4rem;
+
+			padding-top: 3rem;
+		}
+
+
+		#tableau-projects .major {
+
+			text-align: center;
+
+			margin-bottom: 3rem;
+		}
+
+
+		#tableau-projects .major p {
+
+			max-width: 760px;
+
+			margin-left: auto;
+
+			margin-right: auto;
+		}
+
+
+		.project-kpis {
+
+			display: grid;
+
+			grid-template-columns: repeat(3, 1fr);
+
+			gap: 1rem;
+
+			margin: 2rem 0;
+		}
+
+
+		.project-kpis div {
+
+			border: 1px solid #eeeeee;
+
+			padding: 1.5rem 1rem;
+
+			text-align: center;
+
+			background: #ffffff;
+		}
+
+
+		.project-kpis strong {
+
+			display: block;
+
+			font-size: 2rem;
+
+			line-height: 1.1;
+
+			margin-bottom: 0.5rem;
+		}
+
+
+		.project-kpis span {
+
+			display: block;
+
+			font-size: 0.72rem;
+
+			text-transform: uppercase;
+
+			letter-spacing: 0.07rem;
+		}
+
+
+		.project-insights {
+
+			text-align: left;
+
+			margin-bottom: 2rem;
+		}
+
+
+		.project-insights li {
+
+			margin-bottom: 0.8rem;
+		}
+
+
+		.project-tools {
+
+			border-top: 1px solid #eeeeee;
+
+			padding-top: 1.5rem;
+
+			margin-top: 2rem;
+		}
+
+
+		/* ================================
+		   RESPONSIVE
+		================================ */
+
+		@media screen and (max-width: 980px) {
+
+			.floating-section-nav {
+				display: none;
+			}
+
+		}
+
+
+		@media screen and (max-width: 736px) {
+
+			.project-kpis {
+				grid-template-columns: 1fr;
+			}
+
+			#tableau-projects {
+				padding-top: 2rem;
+			}
+
+		}
+
+	</style>
+
+</head>
+
+
+<body class="is-preload">
+
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+
+		<!-- ================================
+		     INTRO
+		================================ -->
+
+		<div id="intro">
+
+			<h1>MARIAM ADETOYI</h1>
 
 			<p>
-				A Tableau and Excel workforce analytics project analysing employee
-				attrition, demographics, tenure, satisfaction and departmental
-				performance across <strong>1,485 employees</strong>.
+				Data Analyst | Business Intelligence | Power BI | SQL | Excel | Tableau
 			</p>
 
-			<p>
-				The analysis identified workforce segments with elevated attrition
-				risk and moved beyond simple employee exit counts by comparing
-				proportional attrition rates across departments, age groups,
-				education fields and tenure.
-			</p>
-
-			<div class="project-kpis">
-				<div>
-					<strong>1,485</strong>
-					<span>Employees Analysed</span>
-				</div>
-
-				<div>
-					<strong>243</strong>
-					<span>Employees Left</span>
-				</div>
-
-				<div>
-					<strong>16.4%</strong>
-					<span>Overall Attrition</span>
-				</div>
-			</div>
-
-			<h3>Key Insights</h3>
-
-			<ul class="project-insights">
-				<li>
-					Sales recorded the highest departmental attrition rate at
-					<strong>20.54%</strong>.
-				</li>
+			<ul class="actions">
 
 				<li>
-					Employees aged 18–26 showed the highest age-group attrition rate
-					at <strong>34.57%</strong>.
-				</li>
 
-				<li>
-					Employees within their first two years at the company recorded
-					an attrition rate of <strong>30.43%</strong>.
-				</li>
-
-				<li>
-					The analysis demonstrated why attrition rates should be considered
-					alongside absolute employee exit counts when identifying workforce risk.
-				</li>
-			</ul>
-
-			<p class="project-tools">
-				<strong>Tools & Skills:</strong><br />
-				Tableau • Excel • Workforce Analytics • HR Analytics •
-				Data Visualisation • KPI Analysis • Data Segmentation •
-				Data Storytelling • Business Insights
-			</p>
-
-			<ul class="actions special">
-				<li>
-					<a href="https://drive.google.com/file/d/1KdwsQ_xdSbk9dwtxPi3kJ6TSVuHfVP7t/view?usp=drive_link" class="button">
-						View Dashboard
-					</a>
-				</li>
-
-				<li>
-					<<a href="https://docs.google.com/presentation/d/1V2pOsN7BhLWph1dTyfFIPmv3OBtjPADz/edit?usp=drive_link&ouid=105646198067569987534&rtpof=true&sd=true" class="button">
-						View Presentation
+					<a
+						href="#header"
+						class="button icon solid solo fa-arrow-down scrolly"
+					>
+						Continue
 					</a>
 
 				</li>
+
 			</ul>
-
-		</article>
-
-	</section>
-
-</section>
-				<!-- About -->
-				<section id="about">
-					<header class="main">
-						<h1>About Me</h1>
-					</header>
-
-					<span class="profile-photo">
-	<img src="images/Profile pic mine.jpeg" alt="Mariam Adetoyi - Data Analyst" />
-</span>
-
-					<p>
-						I am a Clinical Data Analyst with a strong background in healthcare analytics, biomedical science,
-						and quality-focused data environments. I enjoy transforming healthcare data into clear, meaningful insights
-						that support better decision-making, patient outcomes, and operational efficiency.
-					</p>
-
-					<p>
-						My experience covers clinical data analysis, electronic health records, data cleaning, validation,
-						dashboard development, and KPI reporting. I work with tools such as Microsoft Excel, Power BI, SQL,
-						and beginner-level Python to analyse trends, monitor performance, and communicate insights clearly
-						to clinical and operational teams.
-					</p>
-
-					<p>
-						With a foundation in biomedical research and healthcare workflows, I am passionate about using data
-						to improve healthcare services, strengthen reporting accuracy, and support evidence-based decisions.
-					</p>
-				</section>
-
-			</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<section class="split contact">
-					<section class="alt">
-						<h3>Address</h3>
-						<p>United Kingdom</p>
-					</section>
-
-					<section>
-						<h3>Email</h3>
-						<p><a href="mailto:maadetoyi@gmail.com">maadetoyi@gmail.com</a></p>
-					</section>
-
-					<section>
-						<h3>Social</h3>
-						<ul class="icons alt">
-							<li>
-								<a href="https://www.linkedin.com/in/adetoyimariam" class="icon brands alt fa-linkedin" target="_blank" rel="noopener">
-									<span class="label">LinkedIn</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/Mayfuns" class="icon brands alt fa-github" target="_blank" rel="noopener">
-									<span class="label">GitHub</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</section>
-			</footer>
 
 		</div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		const floatingNav = document.querySelector(".floating-section-nav");
-		const excelSection = document.querySelector("#excel-dashboards");
 
-		if (!floatingNav || !excelSection) return;
+		<!-- ================================
+		     HEADER
+		================================ -->
 
-		function toggleFloatingNav() {
-			if (window.scrollY > excelSection.offsetTop + 500) {
-				floatingNav.classList.add("show");
-			} else {
-				floatingNav.classList.remove("show");
+		<header id="header">
+
+			<a href="index.html" class="logo">
+				Analytics Portfolio
+			</a>
+
+		</header>
+
+
+		<!-- ================================
+		     MAIN NAVIGATION
+		================================ -->
+
+		<nav id="nav">
+
+			<ul class="links">
+
+				<li>
+					<a href="#excel-dashboards" class="scrolly">
+						Excel Analytics
+					</a>
+				</li>
+
+				<li>
+					<a href="#powerbi-projects" class="scrolly">
+						Business Intelligence
+					</a>
+				</li>
+
+				<li>
+					<a href="#sql-projects" class="scrolly">
+						SQL
+					</a>
+				</li>
+
+				<li>
+					<a href="#tableau-projects" class="scrolly">
+						Tableau
+					</a>
+				</li>
+
+				<li>
+					<a href="#about" class="scrolly">
+						About Me
+					</a>
+				</li>
+
+			</ul>
+
+		</nav>
+
+
+		<!-- ================================
+		     FLOATING SIDE NAVIGATION
+		================================ -->
+
+		<div class="floating-section-nav">
+
+			<a href="#excel-dashboards">
+				Excel
+			</a>
+
+			<a href="#powerbi-projects">
+				Power BI
+			</a>
+
+			<a href="#sql-projects">
+				SQL
+			</a>
+
+			<a href="#tableau-projects">
+				Tableau
+			</a>
+
+			<a href="#about">
+				About
+			</a>
+
+		</div>
+
+
+		<!-- ================================
+		     MAIN
+		================================ -->
+
+		<div id="main">
+
+
+			<!-- ================================
+			     PORTFOLIO OVERVIEW
+			================================ -->
+
+			<section
+				class="post featured"
+				id="analytics"
+			>
+
+				<header class="major">
+
+					<h2>
+						Data Analytics & Business Intelligence Projects
+					</h2>
+
+					<p>
+						A curated collection of analytics projects grouped by
+						technical focus: Excel dashboarding, Power BI business
+						intelligence, SQL data analysis and Tableau.
+						These projects demonstrate data cleaning, KPI development,
+						data modelling, dashboard design, workforce analytics,
+						healthcare analytics, commercial analysis and
+						insight-driven reporting.
+					</p>
+
+				</header>
+
+			</section>
+
+
+
+			<!-- ================================
+			     EXCEL PROJECTS
+			================================ -->
+
+			<section id="excel-dashboards">
+
+				<header class="major section-intro">
+
+					<h2>
+						Excel Analytics Projects
+					</h2>
+
+					<p>
+						Interactive Excel dashboards built with PivotTables,
+						Pivot Charts, slicers, KPI cards and clean dashboard
+						layouts to analyse business, healthcare and
+						operational performance.
+					</p>
+
+				</header>
+
+
+				<section class="posts">
+
+
+					<!-- Green Valley -->
+					<article>
+
+						<header>
+
+							<h2>
+								Green Valley Medical Centre
+								Performance Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/12KOxyQJKBcl4rXlfnQY5C-XoXufPxvXc?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/Green Valley Dashboard.png"
+								alt="Green Valley Medical Centre Excel dashboard"
+							/>
+
+						</a>
+
+
+						<p>
+
+							An Excel-based healthcare analytics project analysing
+							400 patient records to evaluate recovery outcomes,
+							treatment effectiveness, departmental performance,
+							treatment cost and patient demographics.
+
+							<br><br>
+
+							The interactive dashboard tracks total patients,
+							average recovery score, average treatment cost
+							and average patient age, with slicers for department,
+							doctor, treatment type and gender.
+
+							<br><br>
+
+							<b>Key Insights:</b><br>
+
+							• Average recovery score was 75.<br>
+
+							• Average treatment cost was £5,052.<br>
+
+							• Dermatology and General Medicine recorded
+							the strongest recovery performance.<br>
+
+							• Cardiology showed lower recovery outcomes.<br>
+
+							• Surgery achieved the best treatment recovery score.<br>
+
+							• Low-cost treatment patients made up
+							80% of the distribution.
+
+							<br><br>
+
+							<b>Tools Used:</b><br>
+
+							• Microsoft Excel<br>
+
+							• PivotTables<br>
+
+							• Pivot Charts<br>
+
+							• Slicers<br>
+
+							• Dashboard Design<br>
+
+							• Healthcare Analytics
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/12KOxyQJKBcl4rXlfnQY5C-XoXufPxvXc?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+
+					<!-- Medcore -->
+					<article>
+
+						<header>
+
+							<h2>
+								Medcore Healthcare
+								Performance Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1nkLUECczsVXiSHYBzzxnqCb1G0y0ccjX?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/Medcore Healh Dashboard.png"
+								alt="Medcore Healthcare Excel dashboard"
+							/>
+
+						</a>
+
+
+						<p>
+
+							An Excel-based healthcare analytics project
+							evaluating hospital operations, revenue performance,
+							admission patterns, clinical demand,
+							physician workload, length of stay
+							and diagnostic testing activity across
+							Medcore Health Network.
+
+							<br><br>
+
+							The dashboard consolidates fragmented healthcare
+							data into a single executive reporting view,
+							helping stakeholders monitor performance,
+							identify pressure areas and support
+							data-driven decisions.
+
+							<br><br>
+
+							<b>Key Focus Areas:</b><br>
+
+							• Hospital operations analysis.<br>
+
+							• Revenue and admission trend monitoring.<br>
+
+							• Clinical demand and physician workload review.<br>
+
+							• Length of stay and diagnostic testing analysis.
+
+							<br><br>
+
+							<b>Tools Used:</b><br>
+
+							• Microsoft Excel<br>
+
+							• PivotTables<br>
+
+							• Pivot Charts<br>
+
+							• Slicers<br>
+
+							• KPI Reporting<br>
+
+							• Healthcare Analytics
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1-qScXpZhdxkpm8Ml2INqitk6zqWlzapR?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+				</section>
+
+			</section>
+
+
+
+			<!-- ================================
+			     POWER BI PROJECTS
+			================================ -->
+
+			<section id="powerbi-projects">
+
+				<header class="major section-intro">
+
+					<h2>
+						Business Intelligence Projects
+					</h2>
+
+					<p>
+						Power BI projects focused on data modelling,
+						Power Query transformation, DAX measures,
+						interactive dashboards, KPI reporting,
+						year-on-year analysis and data storytelling.
+					</p>
+
+				</header>
+
+
+				<section class="posts">
+
+
+					<!-- Global HIV -->
+					<article>
+
+						<header>
+
+							<h2>
+								Global HIV Burden &
+								Treatment Coverage Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1ZsYUfz9ovaeOnkfEpd9uWhOTLn5bY7Pe?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/Global HIV Burden Analysis Png.png"
+								alt="Global HIV Burden Power BI dashboard"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A Power BI public health analytics project
+							analysing global HIV trends from 2000 to 2024,
+							focusing on new infections, HIV-related deaths,
+							people living with HIV, ART coverage,
+							death rate, survival rate and country-level risk.
+
+							<br><br>
+
+							The dataset was cleaned, modelled into a star schema
+							and transformed into an interactive dashboard
+							with slicers for year and continent.
+
+							<br><br>
+
+							<b>Key Insights:</b><br>
+
+							• In 2024, 35.23M people were living with HIV globally.<br>
+
+							• New infections reached 984K,
+							while HIV-related deaths were 523K.<br>
+
+							• Death rate was 1.49%,
+							while survival rate was 98.51%.<br>
+
+							• From 2000 to 2024,
+							new infections declined by 59.02%
+							and HIV deaths declined by 65.50%.<br>
+
+							• South Africa had the highest HIV burden in 2024.<br>
+
+							• Treatment access remains uneven across countries,
+							especially among high-infection countries.
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1ZsYUfz9ovaeOnkfEpd9uWhOTLn5bY7Pe?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+
+					<!-- VitalCare -->
+					<article>
+
+						<header>
+
+							<h2>
+								VitalCare Performance Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/file/d/121rrSA-Nfr_-Zd-b0rCE5XHtYbU4yayi/view?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/VitalCare pic.png"
+								alt="VitalCare Power BI dashboard"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A three-page Power BI healthcare dashboard
+							comparing 2023 and 2024 performance across
+							operational, clinical and financial outcomes.
+
+							The report helps stakeholders understand how
+							patient demand, clinical outcomes,
+							resource utilisation and financial sustainability
+							changed year-on-year.
+
+							<br><br>
+
+							The report includes an Overview page,
+							Clinical Analysis page and Financial Analysis page,
+							covering admissions, patient trends,
+							revenue, length of stay, readmissions,
+							clinical outcomes, bed occupancy,
+							mortality rate, profit, cost
+							and department-level performance.
+
+							<br><br>
+
+							<b>Key Findings:</b><br>
+
+							• Admissions increased by 4.08%.<br>
+
+							• Total patients increased by 3.43%.<br>
+
+							• Revenue increased by 5.75%,
+							while profit increased by 4.70%.<br>
+
+							• Mortality rate reduced by 15.77%.<br>
+
+							• Readmission rate increased by 8.68%,
+							highlighting the need for stronger discharge
+							planning and patient follow-up.<br>
+
+							• Profit margin declined from 14.82% to 14.67%
+							because cost increased slightly faster than revenue.<br>
+
+							• General Surgery had the highest admissions,
+							while Oncology was the strongest revenue
+							and profit contributor.
+
+							<br><br>
+
+							<b>Tools Used:</b><br>
+
+							• Power BI<br>
+
+							• Power Query<br>
+
+							• DAX<br>
+
+							• Data Modelling<br>
+
+							• KPI Reporting<br>
+
+							• Interactive Dashboard Design
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1MyexTMLURhKrjPMCMT6Vl3a_WNZhLv61?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+
+					<!-- Toy Store -->
+					<article>
+
+						<header>
+
+							<h2>
+								Toy Store E-Commerce Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1sy48wY4PBqkf6NH0JSV84iBrT7FfsvKw?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/Toy E-commerce store Dashboard png.png"
+								alt="Toy Store E-Commerce Power BI dashboard"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A Power BI e-commerce analytics project
+							evaluating toy store performance across
+							sales, orders, revenue trends,
+							product categories, customer behaviour
+							and marketing channel effectiveness.
+
+							<br><br>
+
+							The dashboard consolidates key commercial metrics
+							into one interactive reporting view,
+							helping stakeholders monitor performance,
+							identify top-performing products,
+							track demand and make data-driven decisions
+							to improve revenue, conversion and profitability.
+
+							<br><br>
+
+							<b>Key Focus Areas:</b><br>
+
+							• Sales and revenue performance.<br>
+
+							• Order volume and conversion trends.<br>
+
+							• Product category analysis.<br>
+
+							• Customer purchasing behaviour.<br>
+
+							• Marketing channel performance.<br>
+
+							• Revenue per order and revenue per session.
+
+							<br><br>
+
+							<b>Tools Used:</b><br>
+
+							• Power BI<br>
+
+							• Power Query<br>
+
+							• DAX<br>
+
+							• Data Modelling<br>
+
+							• KPI Reporting<br>
+
+							• Interactive Dashboard Design<br>
+
+							• E-commerce Analytics
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1sy48wY4PBqkf6NH0JSV84iBrT7FfsvKw?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+				</section>
+
+
+
+				<!-- ================================
+				     FEATURED HACKATHON
+				     GREEN LINE REMOVED
+				================================ -->
+
+				<section
+					class="post featured"
+					id="featured-hackathon"
+				>
+
+					<header class="major">
+
+						<h2>
+							ADHCRI Health Intelligence Dashboard
+						</h2>
+
+						<p>
+
+							<strong>
+								Team HealthSync
+							</strong>
+
+							<br>
+
+							A Power BI healthcare analytics project analysing
+							public health indicators across ASEAN countries
+							to identify health inequalities,
+							disease burden, nutrition risks,
+							child and maternal health challenges,
+							healthcare investment gaps
+							and workforce capacity.
+
+						</p>
+
+					</header>
+
+
+					<a
+						href="videos/Hackathon Demo Video.mp4"
+						target="_blank"
+						rel="noopener"
+						class="image main"
+					>
+
+						<img
+							src="images/Page 1.png"
+							alt="ADHCRI Health Intelligence Dashboard Power BI project"
+						/>
+
+					</a>
+
+
+					<p>
+
+						This project was developed under the
+						ASEAN Digital Health & Climate Resilience Initiative
+						framework.
+
+						The dashboard transforms scattered health datasets
+						into clear, interactive insights that can support
+						evidence-based public health planning,
+						targeted healthcare investment
+						and SDG-aligned decision-making.
+
+					</p>
+
+
+					<p>
+
+						<b>
+							Problem Statement:
+						</b>
+
+						<br>
+
+						ASEAN countries face unequal health outcomes,
+						disease burden and healthcare capacity gaps,
+						creating a need for data-driven insights
+						to identify priority areas for public health
+						intervention and investment.
+
+					</p>
+
+
+					<p>
+
+						<b>
+							Dashboard Pages:
+						</b>
+
+						<br>
+
+						• ASEAN Public Health Overview<br>
+
+						• Disease, Nutrition & Child Health Risk<br>
+
+						• Healthcare Capacity & Investment
+
+					</p>
+
+
+					<p>
+
+						<b>
+							SDG Alignment:
+						</b>
+
+						<br>
+
+						• SDG 3: Good Health & Well-being<br>
+
+						• SDG 10: Reduced Inequalities<br>
+
+						• SDG 17: Partnerships for the Goals
+
+					</p>
+
+
+					<p>
+
+						<b>
+							Tools Used:
+						</b>
+
+						<br>
+
+						Power BI,
+						Power Query,
+						DAX,
+						Star Schema,
+						Data Modelling,
+						Data Visualisation,
+						PowerPoint
+
+					</p>
+
+
+					<p>
+
+						<b>
+							My Role and Contribution
+						</b>
+
+						<br><br>
+
+						As part of Team HealthSync,
+						I contributed to the data analytics workflow
+						by cleaning and transforming multiple ASEAN
+						public health datasets,
+						standardising country names,
+						restructuring year-based columns
+						into a long analytical format
+						and preparing the data model
+						for Power BI analysis.
+
+						I also supported dashboard design,
+						DAX measure creation,
+						insight generation
+						and storytelling of the final report.
+
+						<br><br>
+
+						My contribution focused on turning fragmented
+						public health data into a clear,
+						interactive Power BI dashboard
+						that can help identify health risks,
+						inequalities and priority areas
+						for intervention across ASEAN countries.
+
+					</p>
+
+
+					<ul class="actions special">
+
+						<li>
+
+							<a
+								href="Hackathon Demo Video.mp4"
+								class="button large"
+								target="_blank"
+								rel="noopener"
+							>
+								Watch Dashboard Demo
+							</a>
+
+						</li>
+
+
+						<li>
+
+							<a
+								href="HealthSync Analytics.pdf"
+								class="button large"
+								target="_blank"
+								rel="noopener"
+							>
+								View Presentation
+							</a>
+
+						</li>
+
+
+						<li>
+
+							<a
+								href="HealthSync Analytics Team.pbix"
+								class="button large"
+								target="_blank"
+								rel="noopener"
+							>
+								View Report
+							</a>
+
+						</li>
+
+					</ul>
+
+				</section>
+
+
+			</section>
+
+
+
+			<!-- ================================
+			     SQL PROJECTS
+			================================ -->
+
+			<section id="sql-projects">
+
+				<header class="major section-intro">
+
+					<h2>
+						SQL Data Analysis Projects
+					</h2>
+
+					<p>
+						SQL projects focused on querying relational databases,
+						extracting business insights, joining tables,
+						filtering records, aggregating data,
+						using subqueries and answering business questions
+						through structured analysis.
+					</p>
+
+				</header>
+
+
+				<section class="posts">
+
+
+					<!-- MotivaAutos -->
+					<article>
+
+						<header>
+
+							<h2>
+								MotivaAutos SQL Data Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1txOPuvVuGolLJEYl4DTQvj_gASVFI-Cr?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/motiva autos.jpg"
+								alt="MotivaAutos SQL Data Analysis"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A SQL-based automotive sales analysis project
+							focused on transforming relational business data
+							into meaningful commercial insights.
+
+							I used SQL to analyse customers,
+							products, orders and suppliers,
+							helping answer key questions around
+							sales performance, product demand
+							and revenue contribution.
+
+							<br><br>
+
+							The analysis explores customer ordering activity,
+							product performance, revenue and units sold,
+							supplier contributions and high-value products.
+
+							By translating business questions
+							into structured SQL queries,
+							the project demonstrates how transactional data
+							can support better commercial
+							and operational decision-making.
+
+							<br><br>
+
+							<b>Key Focus Areas:</b><br>
+
+							• Customer and order analysis.<br>
+
+							• Product sales, revenue and units sold.<br>
+
+							• Identification of top and low-performing products.<br>
+
+							• Supplier and supplier-country analysis.<br>
+
+							• Supplier value and contribution analysis.<br>
+
+							• Identification of high-value and expensive products.<br>
+
+							• Translating business questions into actionable insights.
+
+							<br><br>
+
+							<b>Tools & Skills:</b><br>
+
+							• SQL<br>
+
+							• JOINs<br>
+
+							• GROUP BY<br>
+
+							• Aggregations<br>
+
+							• Filtering & Sorting<br>
+
+							• Subqueries<br>
+
+							• Relational Data Analysis<br>
+
+							• Revenue Analysis<br>
+
+							• Product Performance Analysis<br>
+
+							• Business Insights
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1txOPuvVuGolLJEYl4DTQvj_gASVFI-Cr?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+
+					<!-- Lumina -->
+					<article>
+
+						<header>
+
+							<h2>
+								Lumina Healthcare SQL Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1W-WPCqNjApKLCTO4UB1_ZORhOMnwhkJZ?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/lumina ht.png"
+								alt="Lumina Healthcare SQL Data Analysis"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A PostgreSQL-based healthcare operations analysis
+							focused on transforming relational hospital data
+							into meaningful clinical,
+							operational and financial insights.
+
+							I used SQL to analyse patient admissions,
+							hospital activity, departmental performance,
+							readmissions, treatment outcomes,
+							insurance coverage and revenue performance.
+
+							<br><br>
+
+							The analysis was designed to answer
+							key management questions around patient demand,
+							service utilisation, clinical outcomes
+							and financial performance.
+
+							Using structured SQL queries,
+							I connected multiple healthcare tables,
+							calculated performance indicators,
+							identified high-performing departments
+							and hospitals and explored patterns
+							that could support better operational
+							and strategic decision-making.
+
+							<br><br>
+
+							<b>Key Focus Areas:</b><br>
+
+							• Patient admissions and service utilisation analysis.<br>
+
+							• Emergency and annual admission activity.<br>
+
+							• Average length of stay and recovery performance.<br>
+
+							• 30-day readmission analysis by hospital and department.<br>
+
+							• Patient demographic and age-group analysis.<br>
+
+							• Hospital and departmental revenue performance.<br>
+
+							• Treatment costs, insurance coverage and patient payments.<br>
+
+							• Identification of above-average revenue cases
+							and high-performing hospitals.
+
+							<br><br>
+
+							<b>SQL Techniques & Skills:</b><br>
+
+							• PostgreSQL<br>
+
+							• pgAdmin 4<br>
+
+							• SQL JOINs<br>
+
+							• GROUP BY & HAVING<br>
+
+							• Aggregations<br>
+
+							• CASE Statements<br>
+
+							• Conditional Aggregation<br>
+
+							• Subqueries<br>
+
+							• Date Functions<br>
+
+							• KPI Analysis<br>
+
+							• Relational Database Analysis<br>
+
+							• Healthcare Analytics<br>
+
+							• Business Insights
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1W-WPCqNjApKLCTO4UB1_ZORhOMnwhkJZ?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+
+					<!-- Northwind -->
+					<article>
+
+						<header>
+
+							<h2>
+								Northwind SQL Data Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1aXZnlH4kNWDgpxGJnp2UrIMDDi0p8eHO?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/northwind pic.png"
+								alt="Northwind SQL Data Analysis"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A SQL-based business analysis project
+							using the Northwind relational database
+							to explore sales, customers,
+							products, suppliers,
+							employees and order activity.
+
+							I used SQL to answer business questions,
+							identify performance patterns
+							and transform transactional data
+							into clear commercial insights.
+
+							<br><br>
+
+							The analysis involved combining multiple
+							related tables to evaluate product performance,
+							customer activity, supplier distribution,
+							employee information and order trends.
+
+							SQL queries were used to identify
+							top and low-performing products,
+							analyse supplier value
+							and extract information
+							that could support better operational
+							and commercial decision-making.
+
+							<br><br>
+
+							<b>Key Focus Areas:</b><br>
+
+							• Customer and order analysis.<br>
+
+							• Product pricing and sales performance.<br>
+
+							• Identification of top and low-performing products.<br>
+
+							• Supplier and supplier-country analysis.<br>
+
+							• Supplier inventory and product value analysis.<br>
+
+							• Employee and sales representative analysis.<br>
+
+							• Shipping and order information analysis.<br>
+
+							• Identification of high-value products.
+
+							<br><br>
+
+							<b>SQL Techniques & Skills:</b><br>
+
+							• SQL<br>
+
+							• JOINs<br>
+
+							• GROUP BY<br>
+
+							• Aggregations<br>
+
+							• Filtering & Sorting<br>
+
+							• Subqueries<br>
+
+							• Relational Database Analysis<br>
+
+							• Customer Analysis<br>
+
+							• Product Performance Analysis<br>
+
+							• Supplier Analysis<br>
+
+							• Business Insights
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1aXZnlH4kNWDgpxGJnp2UrIMDDi0p8eHO?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+
+					<!-- DORI -->
+					<article>
+
+						<header>
+
+							<h2>
+								DORI SQL Data Analysis
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1vpzvhEqZI50PAtWPnP1ceR4ZELFJVUsX?usp=sharing"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/dori.png"
+								alt="DORI Skin Cancer Risk Intelligence SQL Data Analysis"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A SQL-based healthcare analytics project
+							developed for the Dermalife Oncology
+							and Research Institute (DORI),
+							focused on analysing patient and clinical data
+							to support skin cancer risk intelligence
+							and improve patient diagnosis.
+
+							<br><br>
+
+							The analysis explores patient characteristics,
+							diagnosis patterns and clinical risk factors
+							to identify meaningful trends within the data.
+
+							SQL was used to retrieve,
+							filter, join, aggregate
+							and segment patient records,
+							helping transform complex clinical information
+							into structured insights
+							that can support evidence-based
+							healthcare decision-making.
+
+							<br><br>
+
+							<b>Key Focus Areas:</b><br>
+
+							• Patient demographic analysis.<br>
+
+							• Skin cancer risk-factor analysis.<br>
+
+							• Diagnosis pattern exploration.<br>
+
+							• Patient segmentation and risk profiling.<br>
+
+							• Identification of high-risk patient groups.<br>
+
+							• Clinical and diagnostic trend analysis.<br>
+
+							• Data-driven patient diagnosis optimisation.<br>
+
+							• Translating healthcare questions
+							into analytical insights.
+
+							<br><br>
+
+							<b>SQL Techniques & Skills:</b><br>
+
+							• SQL<br>
+
+							• JOINs<br>
+
+							• GROUP BY<br>
+
+							• Aggregations<br>
+
+							• Filtering & Sorting<br>
+
+							• CASE Statements<br>
+
+							• Conditional Analysis<br>
+
+							• Subqueries<br>
+
+							• Patient Segmentation<br>
+
+							• Healthcare Data Analysis<br>
+
+							• Risk Analysis<br>
+
+							• Business & Clinical Insights
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/drive/folders/1vpzvhEqZI50PAtWPnP1ceR4ZELFJVUsX?usp=sharing"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Project
+								</a>
+
+							</li>
+
+						</ul>
+
+					</article>
+
+
+				</section>
+
+			</section>
+
+
+
+			<!-- ================================
+			     TABLEAU ANALYTICS
+			================================ -->
+
+			<section id="tableau-projects">
+
+				<header class="major">
+
+					<h2>
+						Tableau Analytics
+					</h2>
+
+					<p>
+						Interactive dashboards and analytical projects
+						focused on transforming complex datasets
+						into clear business insights
+						and actionable recommendations.
+					</p>
+
+				</header>
+
+
+				<section class="posts">
+
+
+					<!-- Talent Pulse -->
+					<article>
+
+						<header>
+
+							<span class="date">
+								Tableau | Excel | Workforce Analytics
+							</span>
+
+							<h2>
+
+								<a
+									href="https://drive.google.com/drive/folders/1LEFsW1jHn9G5NGIMdp1RtXh9nwNgYy-V?usp=drive_link"
+									target="_blank"
+									rel="noopener"
+								>
+
+									Talent Pulse Solutions<br>
+
+									Workforce Attrition Analysis
+
+								</a>
+
+							</h2>
+
+						</header>
+
+
+						<a
+							href="https://drive.google.com/drive/folders/1LEFsW1jHn9G5NGIMdp1RtXh9nwNgYy-V?usp=drive_link"
+							target="_blank"
+							rel="noopener"
+							class="image fit"
+						>
+
+							<img
+								src="images/talent pulse.png"
+								alt="Talent Pulse Workforce Attrition Tableau Dashboard"
+							/>
+
+						</a>
+
+
+						<p>
+
+							A Tableau and Excel workforce analytics project
+							analysing employee attrition,
+							demographics, tenure, satisfaction
+							and departmental performance across
+							<strong>1,485 employees</strong>.
+
+						</p>
+
+
+						<p>
+
+							The analysis identified workforce segments
+							with elevated attrition risk
+							and moved beyond simple employee exit counts
+							by comparing proportional attrition rates
+							across departments, age groups,
+							education fields and tenure.
+
+						</p>
+
+
+						<div class="project-kpis">
+
+
+							<div>
+
+								<strong>
+									1,485
+								</strong>
+
+								<span>
+									Employees Analysed
+								</span>
+
+							</div>
+
+
+							<div>
+
+								<strong>
+									243
+								</strong>
+
+								<span>
+									Employees Left
+								</span>
+
+							</div>
+
+
+							<div>
+
+								<strong>
+									16.4%
+								</strong>
+
+								<span>
+									Overall Attrition
+								</span>
+
+							</div>
+
+
+						</div>
+
+
+						<h3>
+							Key Insights
+						</h3>
+
+
+						<ul class="project-insights">
+
+							<li>
+
+								Sales recorded the highest
+								departmental attrition rate at
+								<strong>20.54%</strong>.
+
+							</li>
+
+
+							<li>
+
+								Employees aged 18–26 showed
+								the highest age-group attrition rate at
+								<strong>34.57%</strong>.
+
+							</li>
+
+
+							<li>
+
+								Employees within their first two years
+								at the company recorded an attrition rate of
+								<strong>30.43%</strong>.
+
+							</li>
+
+
+							<li>
+
+								The analysis demonstrated why
+								attrition rates should be considered
+								alongside absolute employee exit counts
+								when identifying workforce risk.
+
+							</li>
+
+						</ul>
+
+
+						<p class="project-tools">
+
+							<strong>
+								Tools & Skills:
+							</strong>
+
+							<br>
+
+							Tableau •
+							Excel •
+							Workforce Analytics •
+							HR Analytics •
+							Data Visualisation •
+							KPI Analysis •
+							Data Segmentation •
+							Data Storytelling •
+							Business Insights
+
+						</p>
+
+
+						<ul class="actions special">
+
+							<li>
+
+								<a
+									href="https://drive.google.com/file/d/1KdwsQ_xdSbk9dwtxPi3kJ6TSVuHfVP7t/view?usp=drive_link"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Dashboard
+								</a>
+
+							</li>
+
+
+							<li>
+
+								<a
+									href="https://docs.google.com/presentation/d/1V2pOsN7BhLWph1dTyfFIPmv3OBtjPADz/edit?usp=drive_link&ouid=105646198067569987534&rtpof=true&sd=true"
+									class="button"
+									target="_blank"
+									rel="noopener"
+								>
+									View Presentation
+								</a>
+
+							</li>
+
+						</ul>
+
+
+					</article>
+
+
+				</section>
+
+			</section>
+
+
+
+			<!-- ================================
+			     ABOUT ME
+			================================ -->
+
+			<section id="about">
+
+				<header class="main">
+
+					<h1>
+						About Me
+					</h1>
+
+				</header>
+
+
+				<span class="profile-photo">
+
+					<img
+						src="images/Profile pic mine.jpeg"
+						alt="Mariam Adetoyi - Data Analyst"
+					/>
+
+				</span>
+
+
+				<p>
+
+					I am a Data Analyst with experience transforming
+					complex datasets into clear,
+					actionable insights that support
+					better business decisions.
+
+					I analyse data across healthcare,
+					public health, workforce analytics,
+					customer behaviour, sales,
+					finance and business operations.
+
+				</p>
+
+
+				<p>
+
+					My analytical work covers the full data lifecycle,
+					from understanding business requirements,
+					data cleaning and validation
+					to modelling, KPI development,
+					dashboard creation
+					and insight communication.
+
+					I use Power BI, SQL, Excel,
+					Tableau and Python
+					to analyse performance,
+					identify trends,
+					investigate business problems
+					and present findings
+					in a clear and practical way.
+
+				</p>
+
+
+				<p>
+
+					My portfolio includes healthcare operations,
+					global public health,
+					workforce attrition,
+					e-commerce performance,
+					revenue analysis
+					and relational database projects.
+
+					I enjoy going beyond reporting what happened
+					by investigating why it happened
+					and identifying practical opportunities
+					for improvement.
+
+				</p>
+
+
+				<p>
+
+					I hold an MSc in Biomedical Science
+					and a B.Tech in Microbiology,
+					which have strengthened my analytical reasoning,
+					research ability,
+					attention to detail
+					and evidence-based approach
+					to problem-solving.
+
+				</p>
+
+			</section>
+
+
+		</div>
+
+
+
+		<!-- ================================
+		     FOOTER
+		================================ -->
+
+		<footer id="footer">
+
+			<section class="split contact">
+
+
+				<section class="alt">
+
+					<h3>
+						Address
+					</h3>
+
+					<p>
+						United Kingdom
+					</p>
+
+				</section>
+
+
+				<section>
+
+					<h3>
+						Email
+					</h3>
+
+					<p>
+
+						<a href="mailto:maadetoyi@gmail.com">
+							maadetoyi@gmail.com
+						</a>
+
+					</p>
+
+				</section>
+
+
+				<section>
+
+					<h3>
+						Social
+					</h3>
+
+
+					<ul class="icons alt">
+
+
+						<li>
+
+							<a
+								href="https://www.linkedin.com/in/adetoyimariam"
+								class="icon brands alt fa-linkedin"
+								target="_blank"
+								rel="noopener"
+							>
+
+								<span class="label">
+									LinkedIn
+								</span>
+
+							</a>
+
+						</li>
+
+
+						<li>
+
+							<a
+								href="https://github.com/Mayfuns"
+								class="icon brands alt fa-github"
+								target="_blank"
+								rel="noopener"
+							>
+
+								<span class="label">
+									GitHub
+								</span>
+
+							</a>
+
+						</li>
+
+
+					</ul>
+
+				</section>
+
+
+			</section>
+
+		</footer>
+
+
+	</div>
+
+
+
+	<!-- ================================
+	     SCRIPTS
+	================================ -->
+
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+
+	<script src="assets/js/browser.min.js"></script>
+
+	<script src="assets/js/breakpoints.min.js"></script>
+
+	<script src="assets/js/util.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+
+
+	<!-- ================================
+	     FLOATING NAVIGATION SCRIPT
+	================================ -->
+
+	<script>
+
+		document.addEventListener(
+			"DOMContentLoaded",
+			function () {
+
+				const floatingNav =
+					document.querySelector(
+						".floating-section-nav"
+					);
+
+				const excelSection =
+					document.querySelector(
+						"#excel-dashboards"
+					);
+
+
+				if (
+					!floatingNav ||
+					!excelSection
+				) {
+					return;
+				}
+
+
+				function toggleFloatingNav() {
+
+					if (
+						window.scrollY >
+						excelSection.offsetTop + 500
+					) {
+
+						floatingNav.classList.add(
+							"show"
+						);
+
+					}
+
+					else {
+
+						floatingNav.classList.remove(
+							"show"
+						);
+
+					}
+
+				}
+
+
+				window.addEventListener(
+					"scroll",
+					toggleFloatingNav
+				);
+
+
+				toggleFloatingNav();
+
 			}
-		}
+		);
 
-		window.addEventListener("scroll", toggleFloatingNav);
-		toggleFloatingNav();
-	});
-</script>
-	</body>
+	</script>
+
+
+</body>
+
 </html>
